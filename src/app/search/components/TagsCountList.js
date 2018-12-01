@@ -7,11 +7,19 @@ export class TagsCountList extends Component {
         console.log(tagsArr)
         return (
             <div>
-                <ul>
+                <h2>Table Tags Searched</h2>
+                <table id="tags-count-table">
+                    <tr>
+                        <th>Tag Name</th>
+                        <th>Tag Count</th>
+                    </tr>
                     {tagsArr.map(tagObj => (
-                        <li>{tagObj["tagName"]} - {tagObj["tagCount"]}</li>
+                        <tr>
+                            <td>{tagObj["tagName"]}</td>
+                            <td>{tagObj["tagCount"]}</td>
+                        </tr>
                     ))}
-                </ul>
+                </table>
             </div>
         )
     }
