@@ -8,4 +8,4 @@ const mapStateToProps = state => {
     }
 }
 
-export default connect(mapStateToProps)(TagsCountList)
+export default connect(mapStateToProps, null)(TagsCountList)

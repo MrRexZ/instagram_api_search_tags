@@ -4,11 +4,14 @@ import {fetchTagCount} from "../actions/actions";
 import {INSTA_ACCESS_TOKEN} from "../constants/config";
 
 
-const mapDispatchToProps = dispatch => {
+const mapDispatchToProps = (dispatch) => {
     return {
-        triggerSearch: tagName => dispatch(fetchTagCount(tagName, INSTA_ACCESS_TOKEN))
+        onTriggerSearch: (tagName) => {
+            dispatch(fetchTagCount(tagName, INSTA_ACCESS_TOKEN))
+        }
     }
 }
 
 
-export default connect(mapDispatchToProps)(SearchForm)
+
+export default connect(null, mapDispatchToProps)(SearchForm)

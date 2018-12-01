@@ -2,8 +2,12 @@ import React, {Component} from 'react';
 
 export class TagsCountList extends Component {
     render() {
+        const tagsCountMap = this.props.tagsCountMap
         return (
-            <div></div>
+            <div>
+                <ul>
+                </ul>
+            </div>
         )
     }
 }

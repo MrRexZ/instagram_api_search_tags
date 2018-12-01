@@ -4,7 +4,6 @@ import {
     REQUEST_TAG_COUNT,
     RESP_AUTH_INSTA_SUCCESS
 } from "../actions/actions";
-import {combineReducers} from "redux";
 
 
 function tags(state, action) {

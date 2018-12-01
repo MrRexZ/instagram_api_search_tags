@@ -1,14 +1,14 @@
 import React, {Component} from 'react';
 import './App.css';
-import {SearchForm} from "./search/components/SearchForm";
 import {TagsCountList} from "./search/components/TagsCountList";
+import SearchTagForm from "./search/containers/SearchTagForm";
 
 
 class App extends Component {
     render() {
         return (
             <div className="App">
-                <SearchForm />
+                <SearchTagForm />
                 <TagsCountList />
             </div>
         );
