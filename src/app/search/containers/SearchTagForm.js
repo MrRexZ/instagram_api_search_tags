@@ -13,5 +13,11 @@ const mapDispatchToProps = (dispatch) => {
 }
 
 
+const mapStateToProps = (state) => {
+    return {
+        lastErrorTag : state.searchByTags.lastErrorTag
+    }
+}
 
-export default connect(null, mapDispatchToProps)(SearchForm)
+
+export default connect(mapStateToProps, mapDispatchToProps)(SearchForm)

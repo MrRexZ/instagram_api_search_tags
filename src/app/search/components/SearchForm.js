@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import {fetchTagCount} from "../actions/actions";
 import {INSTA_ACCESS_TOKEN} from "../constants/config";
 import {connect} from "react-redux";
+import {ErrorView} from "../../base/component/ErrorView";
 
 export class SearchForm extends Component {
     constructor(props) {
@@ -17,7 +18,11 @@ export class SearchForm extends Component {
     }
 
     render() {
-
+        const lastErrorTag = this.props.lastErrorTag
+        var errMsg = ""
+        if (lastErrorTag != null) {
+            errMsg = "Failed fetching tag "+ lastErrorTag + " from server"
+        }
         return (
             <div>
                 <h1>Instagram API Tags Counter</h1>
@@ -28,6 +33,7 @@ export class SearchForm extends Component {
                 <br/>
                 <input id="search-submit-button" type="button" value="Search tag"
                        onClick={() => this.props.onTriggerSearch(this.state.searchInputText)}/>
+                {lastErrorTag != null && <ErrorView errorMsg={errMsg} />}
             </div>
         )
     }

@@ -20,6 +20,11 @@
   margin: 0 auto;
 }
 
+#error-text {
+  color: red;
+  font-size: 12px;
+}
+
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;

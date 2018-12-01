@@ -1,4 +1,5 @@
 import {
+    RECEIVE_TAG_COUNT_FAILURE,
     RECEIVE_TAG_COUNT_SUCCESS,
     REQUEST_AUTH_INSTA,
     REQUEST_TAG_COUNT,
@@ -22,14 +23,20 @@ export function searchByTags(state = {tagData: {}}, action) {
     switch (action.type) {
         case REQUEST_TAG_COUNT:
             return Object.assign({}, state, {
-                isFetching: true
+                isFetching: true,
+                lastErrorTag: null
             })
         case RECEIVE_TAG_COUNT_SUCCESS:
             var data = state.tagData
             data[action.tagName] = tags(state[action.tagName], action)
             return Object.assign({}, state, {
                 isFetching: false,
-                tagData: data
+                tagData: data,
+                lastErrorTag: null
+            })
+        case RECEIVE_TAG_COUNT_FAILURE:
+            return Object.assign({}, state, {
+                lastErrorTag: action.tagName
             })
         default:
             return state
