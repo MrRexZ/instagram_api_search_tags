@@ -15,7 +15,7 @@ After the call, if successful, redirection will happen to `https://www.google.co
 
 2.Assign the access token to variable within `config.js` in this project, to variable `INSTA_ACCESS_TOKEN`.
 
-3.Navigate to root of this project, call `npm start`.
+3.Navigate to root of this project, execute `npm start` from terminal to star the app.
 
 
 
