@@ -35,7 +35,7 @@ function receiveTagCountSuccess(jsonData) {
     }
 }
 
-function fetchTagCount(tagName, accessToken) {
+export function fetchTagCount(tagName, accessToken) {
     return dispatch => {
         dispatch(requestTagCount(tagName))
         return fetch(`https://api.instagram.com/v1/tags/${tagName}?access_token=${accessToken}`)
