@@ -17,7 +17,7 @@ function tags(state, action) {
 
 }
 
-function searchByTags(state= {} , action) {
+export function searchByTags(state= {} , action) {
     switch (action.type) {
         case REQUEST_TAG_COUNT:
             return Object.assign({}, state, {
@@ -34,7 +34,7 @@ function searchByTags(state= {} , action) {
     }
 }
 
-function authInsta(state = {}, action) {
+export function authInsta(state = {}, action) {
     switch (action.type) {
         case REQUEST_AUTH_INSTA:
             return Object.assign({}, state, {
@@ -51,9 +51,3 @@ function authInsta(state = {}, action) {
     }
 }
 
-const rootReducer = combineReducers({
-    searchByTags,
-    authInsta
-})
-
-export default rootReducer
