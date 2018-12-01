@@ -25,7 +25,7 @@ export function searchByTags(state = {tagData: {}}, action) {
                 isFetching: true
             })
         case RECEIVE_TAG_COUNT_SUCCESS:
-            var data = state.data
+            var data = state.tagData
             data[action.tagName] = tags(state[action.tagName], action)
             return Object.assign({}, state, {
                 isFetching: false,
