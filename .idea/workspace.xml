@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="70032ce9-15c9-4f00-9395-a1ce4e2ef08e" name="Default Changelist" comment="Used container components in App.js, extracted root reducers, some renaming">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.js" afterDir="false" />
+    <list default="true" id="70032ce9-15c9-4f00-9395-a1ce4e2ef08e" name="Default Changelist" comment="Refactored storing">
       <change beforePath="$PROJECT_DIR$/src/app/search/components/TagsCountList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/search/components/TagsCountList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/search/reducers/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/search/reducers/reducers.js" afterDir="false" />
     </list>
@@ -54,8 +52,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/search/reducers/reducers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+            <state relative-caret-position="324">
+              <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
               <folding>
                 <element signature="e#0#80#0" expanded="true" />
               </folding>
@@ -123,8 +121,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app/search/components/TagsCountList.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="32" lean-forward="true" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+            <state relative-caret-position="165">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -141,6 +139,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>ERRO</find>
+      <find>console.log(</find>
+      <find>data</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -307,7 +307,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1543658767751</updated>
-      <workItem from="1543658769076" duration="19374000" />
+      <workItem from="1543658769076" duration="20639000" />
     </task>
     <task id="LOCAL-00001" summary="Removed unneeded data &amp; code">
       <created>1543659731738</created>
@@ -421,11 +421,25 @@
       <option name="project" value="LOCAL" />
       <updated>1543676527085</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Changed schema for tagData">
+      <created>1543679802321</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1543679802321</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Used container component for TagsCountList">
+      <created>1543679818329</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1543679818329</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19374000" />
+    <option name="totallyTimeSpent" value="20639000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="0" width="1360" height="768" extended-state="6" />
@@ -497,7 +511,9 @@
     <MESSAGE value="Added Search and TagsMap components to App" />
     <MESSAGE value="Added redux-logger and redux-thunk" />
     <MESSAGE value="Used container components in App.js, extracted root reducers, some renaming" />
-    <option name="LAST_COMMIT_MESSAGE" value="Used container components in App.js, extracted root reducers, some renaming" />
+    <MESSAGE value="Changed schema for tagData" />
+    <MESSAGE value="Used container component for TagsCountList" />
+    <option name="LAST_COMMIT_MESSAGE" value="Used container component for TagsCountList" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/public/index.html">
@@ -619,8 +635,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/search/reducers/reducers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        <state relative-caret-position="324">
+          <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
           <folding>
             <element signature="e#0#80#0" expanded="true" />
           </folding>
@@ -629,8 +645,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/search/components/TagsCountList.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="32" lean-forward="true" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+        <state relative-caret-position="165">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
