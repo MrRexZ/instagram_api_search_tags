@@ -1,4 +1,9 @@
-import {RECEIVE_TAG_COUNT_SUCCESS, REQUEST_TAG_COUNT} from "../actions/actions";
+import {
+    RECEIVE_TAG_COUNT_SUCCESS,
+    REQUEST_AUTH_INSTA,
+    REQUEST_TAG_COUNT,
+    RESP_AUTH_INSTA_SUCCESS
+} from "../actions/actions";
 import {combineReducers} from "redux";
 
 
@@ -29,8 +34,26 @@ function searchByTags(state= {} , action) {
     }
 }
 
+function authInsta(state = {}, action) {
+    switch (action.type) {
+        case REQUEST_AUTH_INSTA:
+            return Object.assign({}, state, {
+                isFetchingInstaKey : true,
+                instaAuthed : false
+            })
+        case RESP_AUTH_INSTA_SUCCESS:
+            return Object.assign({}, state, {
+                isFetchingInstaKey : false,
+                instaAuthed : true
+            })
+        default:
+            return state
+    }
+}
+
 const rootReducer = combineReducers({
-    searchByTags
+    searchByTags,
+    authInsta
 })
 
 export default rootReducer
