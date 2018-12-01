@@ -1,6 +1,6 @@
 # Instagram API Search Tags
 
-A very simplistic frontend to display tags count grouped per tags from my experiment with React + Redux.
+A very simplistic frontend to display tags count grouped per tags from my experiment with React + Redux with Instagram API.
 
 
 ## Instructions to Run :
