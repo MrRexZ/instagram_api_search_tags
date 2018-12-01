@@ -14,6 +14,8 @@ function tags(state, action) {
                 tagName: action.tagName,
                 tagCount: action.tagCount
             })
+        default:
+            return state
     }
 
 }

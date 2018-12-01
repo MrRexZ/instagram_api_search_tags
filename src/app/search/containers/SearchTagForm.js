@@ -1,7 +1,7 @@
 import {connect} from "react-redux";
 import {SearchForm} from "../components/SearchForm";
 import {fetchTagCount} from "../actions/actions";
-import {INSTA_ACCESS_TOKEN} from "../constants/config";
+import {INSTA_ACCESS_TOKEN} from "../../../config/config";
 
 
 const mapDispatchToProps = (dispatch) => {

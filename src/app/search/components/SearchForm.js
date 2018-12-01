@@ -1,7 +1,4 @@
 import React, {Component} from 'react'
-import {fetchTagCount} from "../actions/actions";
-import {INSTA_ACCESS_TOKEN} from "../constants/config";
-import {connect} from "react-redux";
 import {ErrorView} from "../../base/component/ErrorView";
 import {LoadingView} from "../../base/component/LoadingView";
 
@@ -34,7 +31,7 @@ export class SearchForm extends Component {
                 <br/>
                 <input id="search-submit-button" type="button" value="Search tag"
                        onClick={() => this.props.onTriggerSearch(this.state.searchInputText)}/>
-                {isFetching == true && <LoadingView />}
+                {isFetching === true && <LoadingView />}
                 {lastErrorTag != null && <ErrorView errorMsg={errMsg} />}
             </div>
         )
