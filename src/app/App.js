@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './App.css';
-import {TagsCountList} from "./search/components/TagsCountList";
 import SearchTagForm from "./search/containers/SearchTagForm";
+import TagsCountList from "./search/containers/TagsCountList";
 
 
 class App extends Component {
