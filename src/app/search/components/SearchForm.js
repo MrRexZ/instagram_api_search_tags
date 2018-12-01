@@ -7,7 +7,7 @@ export class SearchForm extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            searchInputText : ''
+            searchInputText: ''
         }
         this.handleSearchTextChange = this.handleSearchTextChange.bind(this)
     }
@@ -20,13 +20,17 @@ export class SearchForm extends Component {
 
         return (
             <div>
-                <input id="searchInput" type="text" value={this.state.searchInputText} onChange={this.handleSearchTextChange} />
+                <h1>Instagram API Tags Counter</h1>
+                <p>Enter tag to display the count for : </p>
+                <input id="searchInput" type="text" value={this.state.searchInputText}
+                       onChange={this.handleSearchTextChange}/>
                 <br/>
-                <button type="submit" text="Search tag" onClick={() => this.props.onTriggerSearch(this.state.searchInputText)}/>
+                <br/>
+                <input id="search-submit-button" type="button" value="Search tag"
+                       onClick={() => this.props.onTriggerSearch(this.state.searchInputText)}/>
             </div>
         )
     }
-
 
 
 }
