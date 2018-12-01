@@ -9,7 +9,7 @@ A very simplistic frontend to display tags count grouped per tags from my experi
 
 That is, call https://api.instagram.com/oauth/authorize/?client_id=CLIENT-ID&redirect_uri=REDIRECT-URI&response_type=token
 
-Replace `CLIENT-ID` with the client ID located within this `config.js` in this project folder.
+Replace `CLIENT-ID` with the client ID located within this `config.js` in this project folder, or [create a new sandbox client](https://www.instagram.com/developer/clients/manage/) if your user don't have access to the existing client ID.
 Redirect URI used for this example is `https://google.com`.
 After the call, if successful, redirection will happen to `https://www.google.com/#access_token={XYZ}`, where `XYZ` is the access token.
 
