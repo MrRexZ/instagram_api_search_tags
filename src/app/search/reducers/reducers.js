@@ -36,6 +36,7 @@ export function searchByTags(state = {tagData: {}}, action) {
             })
         case RECEIVE_TAG_COUNT_FAILURE:
             return Object.assign({}, state, {
+                isFetching: false,
                 lastErrorTag: action.tagName
             })
         default:

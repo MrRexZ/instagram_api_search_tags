@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="70032ce9-15c9-4f00-9395-a1ce4e2ef08e" name="Default Changelist" comment="Changed to table layout and added some styles for tag count table">
-      <change afterPath="$PROJECT_DIR$/src/app/base/component/ErrorView.js" afterDir="false" />
+    <list default="true" id="70032ce9-15c9-4f00-9395-a1ce4e2ef08e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/app/base/component/LoadingView.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/search/actions/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/search/actions/actions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/search/components/SearchForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/search/components/SearchForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/search/containers/SearchTagForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/search/containers/SearchTagForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/search/reducers/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/search/reducers/reducers.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -33,11 +30,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app/search/components/SearchForm.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
+            <state relative-caret-position="297">
+              <caret line="36" column="53" lean-forward="true" selection-start-line="36" selection-start-column="53" selection-end-line="36" selection-end-column="53" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -54,11 +51,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/search/actions/actions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="51" column="44" lean-forward="true" selection-start-line="51" selection-start-column="44" selection-end-line="51" selection-end-column="44" />
+            <state relative-caret-position="177">
+              <caret line="48" column="24" lean-forward="true" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/base/component/LoadingView.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -94,22 +100,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/search/containers/TagsCountList.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
-              <folding>
-                <element signature="e#0#58#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/search/containers/SearchTagForm.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+            <state relative-caret-position="222">
+              <caret line="18" column="50" lean-forward="true" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
               <folding>
                 <element signature="e#0#36#0" expanded="true" />
               </folding>
@@ -138,8 +132,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>console.log(</find>
-      <find>ERRO</find>
       <find>data</find>
+      <find>ERRO</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -162,9 +156,10 @@
         <option value="$PROJECT_DIR$/src/app/search/reducers/reducers.js" />
         <option value="$PROJECT_DIR$/src/app/App.css" />
         <option value="$PROJECT_DIR$/src/app/base/component/ErrorView.js" />
+        <option value="$PROJECT_DIR$/src/app/search/actions/actions.js" />
+        <option value="$PROJECT_DIR$/src/app/base/component/LoadingView.js" />
         <option value="$PROJECT_DIR$/src/app/search/containers/SearchTagForm.js" />
         <option value="$PROJECT_DIR$/src/app/search/components/SearchForm.js" />
-        <option value="$PROJECT_DIR$/src/app/search/actions/actions.js" />
       </list>
     </option>
   </component>
@@ -333,7 +328,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1543658767751</updated>
-      <workItem from="1543658769076" duration="25297000" />
+      <workItem from="1543658769076" duration="25898000" />
     </task>
     <task id="LOCAL-00001" summary="Removed unneeded data &amp; code">
       <created>1543659731738</created>
@@ -489,11 +484,25 @@
       <option name="project" value="LOCAL" />
       <updated>1543682749988</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Added ErrorView as view for displaying common error">
+      <created>1543686069066</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1543686069066</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Shows error text when network error occurs from fetching tag">
+      <created>1543686099438</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1543686099438</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25297000" />
+    <option name="totallyTimeSpent" value="25898000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="0" width="1360" height="768" extended-state="6" />
@@ -571,7 +580,9 @@
     <MESSAGE value="Implemented listing of tag count by tag" />
     <MESSAGE value="Added title, desc text for textfield, and customized search tag button" />
     <MESSAGE value="Changed to table layout and added some styles for tag count table" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed to table layout and added some styles for tag count table" />
+    <MESSAGE value="Added ErrorView as view for displaying common error" />
+    <MESSAGE value="Shows error text when network error occurs from fetching tag" />
+    <option name="LAST_COMMIT_MESSAGE" value="Shows error text when network error occurs from fetching tag" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/public/index.html">
@@ -685,26 +696,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/search/containers/SearchTagForm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/search/components/SearchForm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/search/reducers/reducers.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -717,8 +708,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/search/actions/actions.js">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="48" column="24" lean-forward="true" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/base/component/LoadingView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/search/containers/SearchTagForm.js">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="222">
-          <caret line="51" column="44" lean-forward="true" selection-start-line="51" selection-start-column="44" selection-end-line="51" selection-end-column="44" />
+          <caret line="18" column="50" lean-forward="true" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/search/components/SearchForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="36" column="53" lean-forward="true" selection-start-line="36" selection-start-column="53" selection-end-line="36" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

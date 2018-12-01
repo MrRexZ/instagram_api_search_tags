@@ -3,6 +3,7 @@ import {fetchTagCount} from "../actions/actions";
 import {INSTA_ACCESS_TOKEN} from "../constants/config";
 import {connect} from "react-redux";
 import {ErrorView} from "../../base/component/ErrorView";
+import {LoadingView} from "../../base/component/LoadingView";
 
 export class SearchForm extends Component {
     constructor(props) {
@@ -18,7 +19,7 @@ export class SearchForm extends Component {
     }
 
     render() {
-        const lastErrorTag = this.props.lastErrorTag
+        const {lastErrorTag, isFetching} = this.props
         var errMsg = ""
         if (lastErrorTag != null) {
             errMsg = "Failed fetching tag "+ lastErrorTag + " from server"
@@ -33,6 +34,7 @@ export class SearchForm extends Component {
                 <br/>
                 <input id="search-submit-button" type="button" value="Search tag"
                        onClick={() => this.props.onTriggerSearch(this.state.searchInputText)}/>
+                {isFetching == true && <LoadingView />}
                 {lastErrorTag != null && <ErrorView errorMsg={errMsg} />}
             </div>
         )

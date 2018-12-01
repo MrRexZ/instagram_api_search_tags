@@ -15,7 +15,8 @@ const mapDispatchToProps = (dispatch) => {
 
 const mapStateToProps = (state) => {
     return {
-        lastErrorTag : state.searchByTags.lastErrorTag
+        lastErrorTag : state.searchByTags.lastErrorTag,
+        isFetching : state.searchByTags.isFetching
     }
 }
 
