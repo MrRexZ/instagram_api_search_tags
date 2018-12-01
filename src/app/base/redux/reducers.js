@@ -1,5 +1,5 @@
 import {combineReducers} from "redux";
-import {authInsta, searchByTags} from "./search/reducers/reducers";
+import {authInsta, searchByTags} from "../../search/reducers/reducers";
 
 const rootReducer = combineReducers({
     searchByTags,
